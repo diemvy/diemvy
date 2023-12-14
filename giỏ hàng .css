@@ -1,0 +1,152 @@
+
+/* CSS cho tiêu đề giỏ hàng */
+ .tiêu-đề-giỏ-hàng {
+    background-color: #C4CCC6;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold; 
+    letter-spacing: 3px; /*giãn chữ*/
+    text-align: center;
+    color:#666666;
+    white-space: nowrap;
+    height:50px;
+}
+  /*định dạng cho tiêu đề sản phẩm giảm giá*/
+ .sản-phẩm-giảm-giá {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    text-align: center;
+    color:#666666;
+}
+.giỏ-hàng {
+    padding:70px;
+    
+  }
+/*định dang cho tiêu đề của bản sản phẩm*/
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .bảng-sản-phẩm th{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color: #666666;
+    font-size: 80%;
+    padding:5%;
+}
+  /*định dạng cho số tiền tổng*/
+.giỏ-hàng #tổng-cộng{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+    color: #CD5C5C;
+}
+/*định dạng cho các nội dung trong ô của bảng sản phẩm*/
+.giỏ-hàng .bảng1 .bảng-sản-phẩm td{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color: #444444;
+    font-size: 80%;
+    padding:5%;
+    white-space: nowrap;
+}
+/*định dạng bảng sản phẩm*/
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .bảng1 .bảng-sản-phẩm{
+    width:80%;
+}
+
+
+/*định dạng bảng cộng giỏ hàng*/
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .cộng-giỏ-hàng{
+    width:50%;
+  
+}
+/*định dạng nội dung trong các ô của bảng cộng giỏ hàng*/
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .cộng-giỏ-hàng td{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color: #666666;
+    font-size: 80%;
+     padding: 2px;
+  text-align: center;
+}
+.giỏ-hàng .sản-phẩm-trong-giỏ-total{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    align-items: center;;
+}
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .bảng1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .voucher{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display:flex;
+    position:relative;
+}
+
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .voucher .next{
+    position:absolute;
+    right:0px;
+}
+.giỏ-hàng .sản-phẩm-trong-giỏ-total .tonggio{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1/3;
+} 
+
+/*định dạng cho các tiêu đề của bảng cộng giỏ hàng*/
+.giỏ-hàng .cộng-giỏ-hàng th{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color: #666666;
+    font-size: 90%;
+    padding:10px;
+}
+.giỏ-hàng  .text-voucher{
+  text-align: left;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  color: #666666;
+  font-size: 100%;
+  vertical-align: middle; /* Đưa chữ về giữa theo chiều dọc */
+ 
+}
+
+.giỏ-hàng.voucher{
+  background-color: #C4CCC6;
+  padding:12px;
+  display:flex; 
+  gap: 10px;
+ 
+}
+.giỏ-hàng .voucher i{
+    color:#666666;
+}
+.giỏ-hàng.voucher .next i {
+  position:absolute;
+  right:20px; /* Đặt vị trí bên phải, thay đổi giá trị right theo ý muốn */
+}
+
+/*định dạng bảng trong giỏ hàng*/
+table, th, td{
+border-bottom: 1px solid #ccc;
+border-collapse:collapse; /*kiểu 1 viền*/
+}
+
+ .tonggio{
+border: 1px solid #ccc; /* Viền 1px với màu xám nhạt */
+padding: 10px; /* Khoảng cách giữa nội dung và viền */
+}
+.thanh-toán{
+background-color: #337153; /* Màu xanh của nút */
+color: #C4CCC6; /* Màu chữ trắng */
+border-radius: 20px; /* Bo cong các góc của viền */
+padding: 12px 20px; /* Khoảng cách giữa nội dung và viền */
+cursor: pointer; /* Đổi hình con trỏ khi rê chuột vào nút */
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 15px; /* Kích thước chữ */
+text-decoration: none; /*bỏ gạch chân*/
+}
